@@ -1,2 +1,0 @@
-# pythonlearn
-think in python
