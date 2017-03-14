@@ -34,7 +34,7 @@ def fibonacci(n):
     else:
         return fibonacci(n-1)+fibonacci(n-2)
 
-print(fibonacci(20))
+print(fibonacci(50))
 
 
             
