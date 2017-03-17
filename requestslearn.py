@@ -26,4 +26,4 @@ def getHTMLText(url):
         return "产生异常"
     
 if __name__=="__main__":
-    print(getHTMLText("http://www.126.com"))
+    print(getHTMLText("http://www.zuihaodaxue.cn/zuihaodaxuepaiming2016.html"))
