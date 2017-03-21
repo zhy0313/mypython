@@ -30,7 +30,7 @@ def parsePage(ilt,html):
             title=eval(tlt[i].split(':')[1])
             ilt.append([title,price])
     except:
-        print " "
+        print (" ")
        
 #输入：数组ilt
 #输出：商品列表

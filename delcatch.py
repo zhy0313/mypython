@@ -15,7 +15,7 @@ def delCatch(catchdir):
             print("remove    "+files)
             os.remove(files)
         except Exception as e:
-            print(e)
+            continue
         
 
 if __name__=="__main__":

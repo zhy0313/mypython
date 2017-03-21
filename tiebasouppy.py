@@ -24,7 +24,7 @@ def getDemo(url):
 def fillImgUrl(demo,imgList):
     soap=bs4.BeautifulSoup(demo,'html.parser')
     for link in soap.find_all('img'):
-#        print(link.get("class"))
+#        print(link.get("href"))
         if(link.get("class")==['BDE_Image']):
 #            print(link.get("src"))
             imgList.append(link.get("src"))
