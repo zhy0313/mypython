@@ -33,7 +33,7 @@ def getStockList(html,stocklist):
     for link in soup.find_all('a'):
 #        print(link.get('href'))
         
-        ls=re.search(r's[h|z]\d{6}',str(link.get('href')))
+        ls=re.search(r's[hz](6|3|0)\d{5}',str(link.get('href')))
         if(ls):
 #            print(ls.group(0))
             stocklist.append(ls.group(0))
@@ -48,18 +48,36 @@ def getStockList(html,stocklist):
 def getStockinfo(stocklist,stockurl,filepath):
     for i in stocklist:
         stockinfo_url=stockurl+str(i)+'.html'
-#        print(stockinfo_url)
+        print(stockinfo_url)
+        try:
+            html=getHTMLText(stockinfo_url)
+            if (html==''):
+                continue
+            infodict=dict()
+            soup=BeautifulSoup(html,'html.parser')
+            stockinfo=soup.find('div',attrs={'class':'stock-bets'})
+            name=stockinfo.find_all('a',attrs={'class':'bets-name'})[0]
+            print(name.text.split()[0])
+            infodict.update({'股票名称': name.text.split()[0],"股票代码":i})
+            keylist=stockinfo.find_all('dt')
+            valuelist=stockinfo.find_all('dd')
+            for j in range(len(keylist)):
+                infodict[keylist[j].text]=valuelist[j].text
+            print(infodict)
+            with open(filepath,'a',encoding='utf-8') as f:
+                f.write(str(infodict)+'\n')
+        except:
+            continue
+        
 
-    pass
-
+#    pass
 def main():
    stocklist_url='http://quote.eastmoney.com/stocklist.html'
    stockinfo_url='https://gupiao.baidu.com/stock/'
    stocklist=[]
-   filepath="E:\\pythonworkspace\\pythonlearn\\mypython"
+   filepath="D:\pythonworkspace\mypython\BaiduStockInfo.txt"
    html=getHTMLText(stocklist_url)
    getStockList(html,stocklist)
    getStockinfo(stocklist,stockinfo_url,filepath)
-   pass
 
 main()
