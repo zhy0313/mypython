@@ -30,8 +30,8 @@ while(temp!=''):
     total=total+1
     temp=fin.readline()
 
-print total,' ',e_count
+print (total,' ',e_count)
 result=float(e_count)/total
-print result
+print (result)
 tplt="{0:2,.2f}"
 print(tplt.format(float(e_count)/total*100)+'%')
