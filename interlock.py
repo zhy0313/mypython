@@ -82,7 +82,8 @@ def besect(wordslist,word):
             high=mid-1
     
     return -1
-            
+
+          
     
     
 addlist(filename,wordslist)
