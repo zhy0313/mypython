@@ -6,7 +6,7 @@ Created on Sun Apr  2 11:36:51 2017
 """
 from random import random 
 
-filename='D:\pythonworkspace\mypython\words.txt'
+filename='E:\pythonworkspace\pythonlearn\mypython\words.txt'
 wordslist=[]
 '''
 输入：list：wordlist,file:filename
