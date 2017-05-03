@@ -27,14 +27,15 @@ print(words.split(' '))
 输出：wordlist
 '''
 def splitline(words):
-   intab=string.punctuation+string.whitespace+'—'
-   outtab=' '*len(intab)
-   transtab=string.maketrans(intab,outtab) 
-   words=words.strip()
-   words=words.translate(transtab)
-   words=words.lower()
-   words=' '.join(words.split())
-   return words.split(' ')
+#   intab=string.punctuation+string.whitespace+'—'
+#   outtab=' '*len(intab)
+#   transtab=string.maketrans(intab,outtab) 
+    words=words.replace('-',' ')
+    words=words.strip(string.punctuation+string.whitespace)
+#   words=words.translate(transtab)
+    words=words.lower()
+    words=' '.join(words.split())
+    return words.split(' ')
 
 '''
 输入：filepath
@@ -46,7 +47,7 @@ def adddict(filepath):
     
     for line in fin:
         wordslist=splitline(line)
-        print(wordslist)
+#        print(wordslist)
         for word in wordslist:
             if word not in worddict:
                 worddict[word]=1

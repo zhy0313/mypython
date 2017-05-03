@@ -1,0 +1,215 @@
+
+NEWS
+FEATURES
+RESOURCES
+COMMUNITY
+SEARCH
+
+DOWNLOAD
+LUCENE
+? TLP
+Resources
+Find everything you need about Solr? here.
+
+TutorialsDocsCommunityBooksPresentationsVideos
+Tutorials
+Solr Quick Start
+Users who have completed the tutorial are encouraged to review the other documentation available.
+
+Documentation
+Release Documentation
+In each Solr binary release artifact, you can find a copy of the Solr tutorial, a detailed list of changes, and JavaDocs for all included code. Copies of this documentation for the most recent release of each major branch under active development can also be found online:
+
+Latest Release
+The Apache Solr Reference Guide
+Beginning with Solr 4.4, a detailed reference guide is available online or as PDF downloads.
+Officially Released Reference Guide for Solr
+
+Latest Unreleased Reference Guide
+
+Previous Releases
+
+Additional Documentation
+Additional documentation can be found on the Solr Community Wiki or the various books published about Solr.
+
+Community
+This section has been moved to a new Solr Community page.
+
+Solr Books
+If you have a Solr book that you would like to see listed here, please submit a patch to this website via a JIRA issue.
+
+Relevant Search
+Doug Turnbull, John Berryman and Manning Publications are proud to announce Relevant Search.
+
+This book demystifies relevance work and shows you that a search engine is a programmable relevance framework. You'll learn how to apply Elasticsearch or Solr to your business' unique ranking problems. The book demonstrates how to program relevance and how to incorporate secondary data sources, taxonomies, text analytics, and personalization. By the end, you¡¯ll be able to achieve a virtuous cycle of provable, measurable relevance improvements over a search product¡¯s lifetime.
+
+Buy here (Use code relsepc for 40% discount)
+
+Apache Solr Enterprise Search Server, 3rd Edition
+David Smiley, Eric Pugh, Kranti Parisa, and Matt Mitchell are proud to finally announce the book ¡°Apache Solr Enterprise Search Server, Third Edition¡± by Packt Publishing. You can find links to buy it at Packt¡¯s site & Amazon from our book¡¯s official website: solrenterprisesearchserver.com. You'll find a useful search parameter quick-reference sheet (the appendix) online there too.
+
+Apache Solr Enterprise Search Server, Third Edition (cover) Apache Solr Enterprise Search Server, Third Edition is a comprehensive resource to almost everything Solr has to offer. It serves the reader right from initiation to development to deployment. It also comes with complete running examples to demonstrate its use and show how to integrate Solr with other languages and frameworks ¡ª even Hadoop.
+
+By using a large set of metadata, including artists, releases, and tracks, courtesy of the MusicBrainz.org project, you will have a testing ground for Solr and will learn how to import this data in various ways. You will then learn how to search this data in different ways, including Solr's rich query syntax and boosting match scores based on record data. Finally, we'll cover various deployment considerations to include indexing strategies and performance-oriented configuration that will enable you to scale Solr to meet the needs of a high-volume site.
+
+Solr 4 was Solr's biggest release ever. We updated the previous edition to cover Solr 4, and some of Solr 5 -- particularly the part of Solr 5 that needs to be covered most, the bin/solr script. Chapter 9, Integrating Solr, now covers Hadoop integration, and better covers SolrJ. Chapter 3, Text Analysis, introduces various approaches for implementing Multilingual Search in your applications. And we think you'll appreciate the enhanced coverage of the topic of query auto-suggesters (AKA query completion) in Chapter 8, Search Components -- a feature that is important to most search applications. This edition has two additional authors, Kranti & Matt, who add their perspectives based on their experience working with Solr for a long time.
+
+Buy here
+
+Scaling Big Data with Hadoop and Solr - Second Edition
+Hrishikesh Karambelkar is proud to announce the book "Scaling Big Data with Hadoop and Solr - Second Edition" by Packt Publishing. This book will help the readers understand, design, build, and optimize their big data search engine with Hadoop and Apache Solr.
+
+Scaling Big Data with Hadoop and Solr - Second Edition (cover) Scaling Big Data with Hadoop and Solr - Second Edition is aimed at developers, designers, and architects who would like to build big data enterprise search solutions for their customers or organizations. It explores the different approaches to making Solr work on big data ecosystems apart from Apache Hadoop.
+
+A practical guide that covers interesting, real-life cases for big data search along with sample code targetted to help the readers to improve search performance while working with big data.
+
+Click here to read more about the Scaling Big Data with Hadoop and Solr - Second Edition
+
+Apache Solr Search Patterns
+Jayant Kumar is proud to announce the book "Apache Solr Search Patterns" by Packt Publishing. This book is for developers who have prior knowledge on Solr and are looking at procuring advanced strategies for improving their search using Solr. Also, if you work with analytics to generate graphs and reports using Solr and you are a search architect who is looking forward to scale your search using Solr, then this book is a perfect guide for you.
+
+Apache Solr Search Patterns (cover) Apache Solr Search Patterns begins with a brief introduction of analyzers and tokenizers to understand the challenges associated with implementing large-scale indexing and multilingual search functionality. It then moves on to working with custom queries and understanding how filters work internally. While doing so, it also helps the readers create their own query language or Solr plugin that does proximity searches.
+
+Furthermore, the book discusses how Solr can be used for real-time analytics and tackle problems faced during its implementation in e-commerce search. It then dives into the spatial features such as indexing strategies and search/filtering strategies for a spatial search. And also do an in-depth analysis of problems faced in an ad serving platform and how Solr can be used to solve these problems.
+
+Click here to read more about the Apache Solr Search Patterns
+
+Solr Cookbook - Third Edition
+Rafa? Ku? is proud to finally announce the book "Solr Cookbook - Third Edition" by Packt Publishing. This edition will specifically appeal to developers who wish to quickly get to grips with the changes and new features of Apache Solr 5.
+
+Solr Cookbook - Third Edition (cover) Solr Cookbook - Third Edition has over 100 easy to follow recipes to solve real-time problems related to Apache Solr 4.x and 5.0 effectively. Starting with vital information on setting up Solr, the developer will quickly progress to analyzing their text data through querying and performance improvement. Finally, they will explore real-life situations, where Solr can be used to simplify daily collection handling.
+
+With numerous practical chapters centered on important Solr techniques and methods Solr Cookbook - Third Edition will guide intermediate Solr Developers who are willing to learn and implement Pro-level practices, techniques, and solutions.
+
+Click here to read more about the Solr Cookbook - Third Edition.
+
+Mastering Apache Solr
+Mathieu Nayrolles and Inkstall Publications are proud to announce their latest book ¡ª Mastering Apache Solr. This book will empower you to provide a world-class search experience to your end users through the discovery of the powerful mechanisms presented in it.
+
+Mastering Apache Solr cover Mastering Apache Solr is a short, focused, practical, hands-on guide containing crisp, relevant, systematically arranged, progressive chapters. These chapters contain a wealth of information presented in a direct and easy-to-understand manner. Highlighting Solr's supremacy over classical databases in full-text search, this book covers key technical concepts which will help you accelerate your progress in the Solr world.
+
+Mastering Apache Solr starts with an introduction to Apache Solr, its underlying technologies, the main differences between the classical database engines, and gradually moves to more advance topics such as boosting performance. In this book, we will look under the hood of a large number of topics and discuss answers to pertinent questions such as why denormalize data, how to import classical databases' data inside Apache Solr, how to serve Solr through five different web servers, how to optimize them to serve Solr even faster. An important and major topic covered in this book is Solr's querying mechanism, which will prove to be a strong ally in our journey through this book. We then look at boosting performance and deploying Solr using several servlet servers. Finally, we cover how to communicate with Solr using different programming languages, before deploying it in a cloud-based environment.
+
+Mastering Apache Solr is written lucidly and has a clear simple approach. From the first page to the last, the book remains practical and focuses on the most important topics used in the world of Apache Solr without neglecting important theoretical fundamentals that help you build a strong foundation.
+
+Buy here
+
+Solr in Action
+Trey Grainger, Timothy Potter, and Manning Publications are proud to announce Solr in Action, a comprehensive (638 pg.), example-driven guide covering through Solr 4.7.
+
+Solr in Action cover Solr in Action is an essential resource for implementing fast and scalable search using Apache Solr. It uses well-documented examples ranging from basic keyword searching to scaling a system for billions of documents and queries. With this book, you¡¯ll gain a deep understanding of how to implement core Solr capabilities such as faceted navigation through search results, matched snippet highlighting, field collapsing and search results grouping, spell-checking, query autocomplete, querying by functions, and more. You¡¯ll also see how to take Solr to the next level, with deep coverage of large-scale production use cases, sophisticated multilingual search, complex query operations, and advanced relevancy tuning strategies.
+
+Buy here
+
+Einf¨¹hrung in Apache Solr
+Einf¨¹hrung in Apache Solr Cover
+
+Markus Klose, Daniel Wrigley and O' Reilly are proud to present the first book on Apache Solr in German.
+
+Einf¨¹hrung in Apache Solr offers a substantiated and practice-oriented introduction into the search technology Apache Solr. The sample configurations, instructions, tips and pitfalls from the practice of the authors enable the reader to get a quick insight to this search technology. The book provides the necessary knowledge and tools to implement custom search solutions with Apache Solr, covering the following topics:
+
+Quick start guide: Start Apache Solr after download and execute your first search.
+Index configuration: Learn how to configure the schema.xml and the analysis process to improve search quality.
+Features out-of-the-box: Use all build-in features like faceting, auto suggest or spellcheck and integrate them into a search user interface.
+Scoring and relevance: Learn how to influence the scoring mechanism to bias the quantity and quality of your hitlist.
+Solr architectures: Read about the options scaling Apache Solr. Set up your own Solr Cluster as Master/Slave or SolrCloud architecture.
+Buy here
+Instant Apache Solr for Indexing Data How-to
+Instant Apache Solr for Indexing Data How-to - cover Alexandre Rafalovitch and Packt Publishing are proud to announce Instant Apache Solr for Indexing Data How-to - an example-driven guide that will take you on a journey from the basic collection of data to a multi-lingual, multi-field, multi-type schema.
+
+Content and data searching is a very important part of the modern user experience, and before something can be searched, it has to be indexed. Indexing is a hidden part of the process that has a surprisingly strong impact on the overall user experience. From speed, to faceting, to multilingual support, everything depends on correct indexing. Instant Apache Solr for Indexing Data How-to is a friendly, practical guide that will show you how to index your data with Solr 4.3.
+
+Buy here
+
+Apache Solr 4 Cookbook
+Apache Solr 4 Cookbook cover Rafa? Ku? and Packt Publishing are proud to announce the second edition of Apache Solr 4 Cookbook. The Cookbook is newly updated and improved with new chapters on SolrCloud and every chapter updated to Solr 4.
+
+Apache Solr 4 Cookbook features over 100 recipes to make Apache Solr faster, more reliable, and return better results. It will show you how to get the most out of your search engine. Full of practical recipes and examples, this book will show you how to set up Apache Solr, tune and benchmark performance as well as index and analyze your data to provide better, more precise, and useful search data.
+
+The book will make your search better, more accurate and faster with practical recipes on essential topics such as SolrCloud, querying data, search faceting, text and data analysis, and cache configuration.
+
+With numerous practical chapters centered on important Solr techniques and methods, Apache Solr 4 Cookbook is an essential resource for developers who wish to take their knowledge and skills further. Thoroughly updated and improved, this Cookbook also covers the changes in Apache Solr 4 including the awesome capabilities of SolrCloud.
+
+Buy here
+
+Taming Text
+Taming Text cover Taming Text is a hands-on, example-driven guide to working with unstructured text in the context of real-world applications. This book explores how to automatically organize text using approaches such as full-text search with Apache Solr (v3), proper name recognition, clustering, tagging, information extraction, and summarization. The book guides you through examples illustrating each of these topics, as well as the foundations upon which they are built. Source code is available on Github.
+
+Buy here
+
+Apache Solr 3.1 Cookbook
+Solr Cookbook cover Rafa? Ku? is proud to introduce a new book on Solr, Apache Solr 3.1 Cookbook from Packt Publishing.
+
+Apache Solr 3.1 Cookbook will make your everyday work easier by using real-life examples that show you how to deal with the most common problems that can arise while using the Apache Solr search engine.
+
+This cookbook will show you how to get the most out of your search engine. Each chapter covers a different aspect of working with Solr from analyzing your text data through querying, performance improvement, and developing your own modules. The practical recipes will help you to quickly solve common problems with data analysis, show you how to use faceting to collect data and to speed up the performance of Solr. You will learn about functionalities that most newbies are unaware of, such as sorting results by a function value, highlighting matched words, and computing statistics to make your work with Solr easy and stress free.
+
+Buy here
+
+Presentations
+If you have a Solr presentation that you would like to see listed here, please submit a patch via a JIRA with the appropriate content.
+
+Slideshare
+Search Slideshare for Solr
+
+Videos
+If you have a Solr video that you would like to see listed here, please submit a patch via a JIRA with the appropriate content.
+
+Lucene/Solr Revolution
+Videos from Past Events including Apache Eurocon
+
+YouTube
+Search YouTube for Solr
+
+Vimeo
+Search Vimeo for Solr
+
+FEATURES
+
+Overview
+Data Handling
+Querying
+Faceting
+Discovery
+Plugins and Extensions
+Statistics and Aggregations
+Spatial
+Rich Content
+Performance
+Scaling with SolrCloud
+User Interface
+RESOURCES
+
+Tutorial
+Docs
+Books
+Presentations
+Videos
+Solr Logos and Assets
+Download Older Releases
+GET STARTED
+
+Download
+Run Through the Tutorial
+Level Up
+
+COMMUNITY
+
+Support
+Mailing Lists
+Issues (JIRA)
+Contribute
+Version control (GIT)
+RELATED PROJECTS
+
+Apache Hadoop
+Apache ManifoldCF
+Apache Mahout
+Apache Nutch
+Apache OpenNLP
+Apache Spark
+Apache Tika
+Apache Zeppelin
+Apache Zookeeper
+Copyright ? 2017 The Apache Software Foundation, Licensed under the Apache License, Version 2.0. Privacy Policy
+Apache and the Apache feather logo are trademarks of The Apache Software Foundation. Apache Lucene, Apache Solr and their respective logos are trademarks of the Apache Software Foundation. Please see the Apache Trademark Policy for more information. All non-Apache logos are the trademarks of their respective owners.
