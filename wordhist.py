@@ -6,7 +6,10 @@ Created on Wed May 03 21:19:18 2017
 """
 
 import string
-
+'''
+输入:filename
+输出：包含单词和单词出现次数的字典hist
+'''
 def process_file(filename):
     hist=dict()
     fp=open(filename)
@@ -14,6 +17,10 @@ def process_file(filename):
         process_line(line,hist)
     return hist
 
+'''
+输入：string，和hist字典
+输出：把string 分割成一个个word，添加进hist，value为出现次数
+'''
 def process_line(line,hist):
     line=line.replace('-',' ')
     
@@ -22,7 +29,17 @@ def process_line(line,hist):
         word=word.lower()
         
         hist[word]=hist.get(word,0)+1
+            
+def  total_words(hist):
+    return sum(hist.values())
+
+def different_words(hist):
+    return len(hist)
 
 hist=process_file('emma.txt')
 
+
+
 print(hist)
+print(total_words(hist))
+print(different_words(hist))
