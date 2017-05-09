@@ -11,11 +11,13 @@ print (string.punctuation)
 print(string.whitespace)
 intab=string.punctuation+string.whitespace
 outtab=' '*len(intab)
-transtab=string.maketrans(intab,outtab)
+#transtab=string.maketrans(intab,outtab)
 
 words='    wangyanwu  Zhangchunxiang Sunquan */:;<=>?@[\]^_`{|}~ wangwu lihenan     '
 words=words.strip()
-words=words.translate(transtab)
+#words=words.translate(transtab)
+print('------------')
+words=re.sub(r'[^A-Za-z0-9]',' ',words)
 words=words.lower()
 words=' '.join(words.split())
 test=re.sub(' +',' ',words)
@@ -31,7 +33,8 @@ def splitline(words):
 #   outtab=' '*len(intab)
 #   transtab=string.maketrans(intab,outtab) 
     words=words.replace('-',' ')
-    words=words.strip(string.punctuation+string.whitespace)
+#    words=words.strip(string.punctuation+string.whitespace)
+    words=re.sub(r'[^A-Za-z0-9]',' ',words)
 #   words=words.translate(transtab)
     words=words.lower()
     words=' '.join(words.split())
@@ -56,7 +59,7 @@ def adddict(filepath):
     return worddict
 
 def main():
-    filepath="E:\pythonworkspace\pythonlearn\mypython\mybook.txt"
+    filepath="D:\pythonworkspace\mypython\mybook.txt"
     print(adddict(filepath))
     
 main()
