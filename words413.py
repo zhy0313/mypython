@@ -56,10 +56,29 @@ def adddict(filepath):
                 worddict[word]=1
             else:
                 worddict[word]+=1
+    worddict.pop('',0)                    
     return worddict
 
-def main():
-    filepath="D:\pythonworkspace\mypython\mybook.txt"
-    print(adddict(filepath))
+'''
+输入：dict，n
+输出：list.包含单词和频率，按频率从大到小排序。
+'''
+def topword(worddict):
+    temp=[]
+    for key,value in worddict.items():
+        temp.append([value,key])
+    temp.sort(reverse=True)
+    res=[]
+    for value,key in temp:
+        res.append([key,value])
+    return res
     
+        
+ 
+def main():
+    filepath="E:\pythonworkspace\pythonlearn\mypython\mybook.txt"
+    hist=adddict(filepath)
+    t=topword(hist)
+    for word,freq in t[0:20]:
+        print(word+'\t'+str(freq))
 main()

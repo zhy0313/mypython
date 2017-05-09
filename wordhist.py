@@ -16,6 +16,7 @@ def process_file(filename):
     fp=open(filename)
     for line in fp:
         process_line(line,hist)
+    hist.pop('',-1)
     return hist
 
 def myprocess_file(filename):
@@ -23,6 +24,7 @@ def myprocess_file(filename):
     fp=open(filename)
     for line in fp:
         myprocess_line(line,hist)
+    hist.pop('',-1)
     return hist
 '''
 输入：string，和hist字典
@@ -34,7 +36,7 @@ def process_line(line,hist):
     for word in line.split():
         word=word.strip(string.punctuation+string.whitespace)
         word=word.lower()
-        
+        word=' '.join(word.split())
         hist[word]=hist.get(word,0)+1
 
 def myprocess_line(line,hist):
@@ -43,25 +45,61 @@ def myprocess_line(line,hist):
     for word in line.split():
         word=re.sub(r'[^A-Za-z0-9]',' ',word)
         word=word.lower()
-        
+        word=' '.join(word.split())
         hist[word]=hist.get(word,0)+1
-        
+
+'''
+输入：dict
+输出：包含的单词数
+'''        
 def  total_words(hist):
     return sum(hist.values())
-
+'''
+输入：dict
+输出：包含单词的种数
+'''
 def different_words(hist):
     return len(hist)
-
+'''
+输入：dict，key 单词，value,出现次数
+输出：list。按word 出现次数从高到低排序。
+'''
+def most_common(hist):
+    temp=[]
+    for key,value in hist.items():
+        temp.append([value,key])
+        temp.sort(reverse=True)
+    res=[]
+    for value,key in temp:
+        res.append([key,value])
+    return res
+    
 hist=process_file('emma.txt')
 hist1=myprocess_file('emma.txt')
-
-
-
+dictwords=myprocess_file('words.txt')
+'''
+输入：dict d1,d2
+输出：dict .在d1中有，在d2中没有的单词。
+'''
+def subtract(d1,d2):
+    subdict=dict()
+    for key in d1:
+        if key not in d2:
+            subdict[key]=None
+    return subdict
 #print(hist)
-for i in range(10):
-    print("  ")
-print(hist1)
+#for i in range(10):
+#    print("  ")
+#print(hist1)
 print(total_words(hist))
 print(different_words(hist))
 print(total_words(hist1))
 print(different_words(hist1))
+
+t=most_common(hist1)
+
+print(hist.get('',-1))
+for word,freq in t[:10]:
+    print(word+'\t'+str(freq))
+#print(hist1)   
+print(subtract(hist1,dictwords))
