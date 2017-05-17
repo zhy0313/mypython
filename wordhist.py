@@ -87,6 +87,9 @@ def subtract(d1,d2):
         if key not in d2:
             subdict[key]=None
     return subdict
+
+def mysubtract(d1,d2):
+    return set(d1)-set(d2)
 #print(hist)
 #for i in range(10):
 #    print("  ")
@@ -102,4 +105,4 @@ print(hist.get('',-1))
 for word,freq in t[:10]:
     print(word+'\t'+str(freq))
 #print(hist1)   
-print(subtract(hist1,dictwords))
+print(mysubtract(hist1,dictwords))
